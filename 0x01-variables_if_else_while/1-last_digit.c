@@ -5,34 +5,32 @@
 #include <stdio.h>
 
 /**
-  * main - Print a ext according number
-  * Return: Always (Success)
-  *
-  */
+ * main - Entry
+ * Return: Always @
+ */
 
 int main(void)
 {
 
-	int n, lastd;
+	int n;
+	int a;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	lastd = n % 10;
+	a = n % 10;
 
-	if (lastd > 5)
-	{
-	printf("Last digit of %d is %d and is greater than 5\n", n, lastd);
-	}
-	else if (last == 0)
-	{
-		printf("Last digit of %d is %d and is 0\n",n,last);
-	}
-	else if (last < 6 && lastd != 0)
-	{
-	printf("Last digit of %d is %d and is less than 6 and not 0\n");
-	}
+	if (a > 5)
+{
+	printf("Last digit of %d is %d and is greater than 5\n", n, a);
+}
+	if (a == 0)
+{
+	printf("Last digit of %d is %d 0\n", n, a);
+}
+	else
+{
+	printf("Last digit of %d is %d and is less than 6 and not 0\n", n, a);
+}
 	return (0);
-
-
 
 }
