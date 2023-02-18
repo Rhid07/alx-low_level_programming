@@ -1,36 +1,47 @@
 #include <stdlib.h>
-
 #include <time.h>
-
 #include <stdio.h>
 
+
 /**
- * main - Entry
- * Return: Always @
- */
+  * main - Entry point
+  *
+  * Description: print the value of n status:
+  *	greater than,is zero and not less than 6.
+  *
+  * Return: Alway 0 (Success)
+  */
 
 int main(void)
 {
+int n; digit;
 
-	int n;
-	int a;
+srand(time(0));
+n = rand() - RAND_MAX / 2;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	a = n % 10;
+/* my code */
 
-	if (a > 5)
-{
-	printf("Last digit of %d is %d and is greater than 5\n", n, a);
-}
-	if (a == 0)
-{
-	printf("Last digit of %d is %d 0\n", n, a);
-}
-	else
-{
-	printf("Last digit of %d is %d and is less than 6 and not 0\n", n, a);
-}
-	return (0);
+digit = n % 10;
+
+if (digit > 5)
+	printf("Last digit of %d is %d and is greater than 5\n", n, digit);
+
+else if (digit == 0)
+	printf("Last digit of %d is %d and is 0\n",n, digit);
+else if (digit < 6 && digit != 0)
+	printf("Last digit of %d is %d and is less
+			than 6 and not 0\n", n, digit);
+return(0);
+
+
+
+
+
+
+
+
+
+
+
 
 }
