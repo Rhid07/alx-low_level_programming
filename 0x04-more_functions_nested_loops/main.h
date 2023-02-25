@@ -1,5 +1,5 @@
  #ifndef RHID07_H
- #define rHID07_H
+ #define RHID07_H
 
 
 int _isupper(int c);
