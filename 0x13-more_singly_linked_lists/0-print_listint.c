@@ -2,17 +2,17 @@
 
 /**
  * print_listint - print all the element in listint_s list
- * @n: integer
- * @next: points to the next node
+ * @h: linked list of listint_s to print
+ * 
  *
- * Description: singly linked list node structure
+ * Return: number of node
  * 
  */
 
 size_t print_listint(const listint_t *h)
 {
 	size_t num = 0;
-	while (h)
+	while (h != NULL)
 	{
 
 	printf("%d\n", h->n);
