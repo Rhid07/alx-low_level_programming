@@ -3,8 +3,10 @@
 /**
  * binary_to_unit - converts a binary to unsigned int
  * @b: is the string containing the binary number
+ *
  * Return: the converted number
  */
+
 unsigned int binary_to_uint(const char *b)
 {
 	int a;
