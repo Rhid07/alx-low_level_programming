@@ -1,16 +1,23 @@
 #include "main.h"
 
 /**
- * _puts -print a string
- * @str: string to be printed
+ * _puts - prints a string
+ * @str: string
  *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
+
 
 void _puts(char *str)
 {
-	while (*str != '\0')
+	int i;
+
+	i = 0;
+	while (str[i] != '\0')
 	{
-		_putchar(*str++);
+		_putchar(str[i]);
+		i++;
 	}
 	_putchar('\n');
 }
