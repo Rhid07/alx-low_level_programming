@@ -1,22 +1,27 @@
-
 #include "main.h"
+#include <stdio.h>
 
 /**
- * _strcpy - copies the string pointed to by src
- * @dest: destination
- * @src: source
- * Return: string
+ * _strcpy - copies one string to another
+ * @dest: Array
+ * @src: Size of Array
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
 char *_strcpy(char *dest, char *src)
 {
-	int len = 0;
+	int i, j;
 
-	while (*(src + len) != '\0')
+	i = 0;
+	while (src[i] != '\0')
 	{
-		*(dest + len) = *(src + len);
-		len++;
+		i++;
 	}
-
-	*(dest + len) = '\0';
+	for (j = 0; j <= i; j++)
+	{
+		dest[j] = *(src + j);
+	}
 	return (dest);
 }
+

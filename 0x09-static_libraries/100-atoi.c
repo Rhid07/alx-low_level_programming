@@ -1,46 +1,43 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * _atoi - converts a string to an integer
- * @s: string to be converted
+ * _atoi - Converts String to int
+ * @s: string
  *
- * Return: the int converted from the string
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
 int _atoi(char *s)
 {
-	int i, d, n, len, f, digit;
+	int i, j, ten2, neg, found;
+	unsigned int ten;
 
-	i = 0;
-	d = 0;
-	n = 0;
-	len = 0;
-	f = 0;
-	digit = 0;
-
-	while (s[len] != '\0')
-		len++;
-
-	while (i < len && f == 0)
+	ten = 0;
+	i = 1;
+	neg = 1;
+	found = 0;
+	while (s[i] != '\0')
 	{
-		if (s[i] == '-')
-			++d;
-
-		if (s[i] >= '0' && s[i] <= '9')
-		{
-			digit = s[i] - '0';
-			if (d % 2)
-				digit = -digit;
-			n = n * 10 + digit;
-			f = 1;
-			if (s[i + 1] < '0' || s[i + 1] > '9')
-				break;
-			f = 0;
-		}
 		i++;
 	}
-
-	if (f == 0)
-		return (0);
-
-	return (n);
+	for (j = 0; j < i; j++)
+	{
+		if ((s[j] >= 48) && (s[j] <= 57))
+		{
+			ten = ten * 10 + (s[j] - '0');
+			found = 1;
+		}
+		else if (s[j] == 45)
+		{
+			neg = neg * -1;
+		}
+		else if (found == 1)
+		{
+			break;
+		}
+	}
+	ten2 = ten * neg;
+	return (ten2);
 }
+

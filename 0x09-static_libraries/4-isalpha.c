@@ -1,22 +1,24 @@
 #include "main.h"
 
 /**
- * _isalpha - function that check for alphabets
+ * _isalpha - returns 1 if its alphabetic character, 0 otherwise
+ * @c: Input parameter in ASCII
  *
- * @c: paameter to be checked
- *
- * Return: 1 if it is an alphabet
- * and 0 therwise
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
-
 int _isalpha(int c)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+	int i;
+
+	if (((c > 96) && (c < 123)) || ((c > 64) && (c < 91)))
 	{
-		return (1);
+		i = 1;
 	}
 	else
 	{
-		return (0);
+		i = 0;
 	}
+	return (i);
 }
+

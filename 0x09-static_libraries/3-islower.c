@@ -1,16 +1,24 @@
 #include "main.h"
-/**
- * _islower - function to print lower case
- * @c: parameter to be printed
- * Return: 1 if it is a lower case
- * and 0 otherwise
- */
 
+/**
+ * _islower - returns 1 is lowercase, 0 otherwise
+ * @c: Input parameter in ASCII
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
 int _islower(int c)
 {
-	if (c >= 97 && c <= 122)
-		return (1);
-	else
-		return (0);
+	int i;
 
+	if ((c > 96) && (c < 123))
+	{
+		i = 1;
+	}
+	else
+	{
+		i = 0;
+	}
+	return (i);
 }
+

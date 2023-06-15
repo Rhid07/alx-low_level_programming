@@ -1,24 +1,36 @@
 #include "main.h"
 
 /**
- * _strpbrk - searches a string for any of a set of bytes.
- * @s: first string.
- * @accept: second string.
- * Return: a pointer to the byte in s that matches one of the
- * bytes in accept, or NULL if no such byte is found.
+ * _strstr - finds the first occurrence of the substring needle in haystack
+ * @haystack: string where to look
+ * @needle: string to find
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
-char *_strpbrk(char *s, char *accept)
+char *_strstr(char *haystack, char *needle)
 {
-	unsigned int a, b;
+	int l, l2, i, j, c;
 
-	for (a = 0; *(s + a) != '\0'; a++)
+	l = 0, l2 = 0, c = 0;
+	while (haystack[l] != '\0')
+		l++;
+	while (needle[l2] != '\0')
+		l2++;
+	for (i = 0; i < l; i++, haystack++)
 	{
-		for (b = 0; *(accept + b) != '\0'; b++)
+		for (j = 0, c = 0; j < l2; j++)
 		{
-			if (*(s + a) == *(accept + b))
-				return (s + a);
+			if (haystack[j] == 0)
+				break;
+			if (haystack[j] == needle[j])
+			{
+				c += 1;
+			}
 		}
+		if (c == l2)
+			return (haystack);
 	}
-	return ('\0');
+	return (0);
 }
 

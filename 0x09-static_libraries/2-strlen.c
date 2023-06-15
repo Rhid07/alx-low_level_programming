@@ -1,19 +1,21 @@
 #include "main.h"
 
 /**
- * _strlen - return the lenght of string
+ * _strlen - swaps two values
  * @s: string
- * Return: lenght
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
-
 int _strlen(char *s)
 {
-	int len = 0;
+	int i;
 
-	while (*s != '\0')
+	i = 0;
+	while (s[i] != '\0')
 	{
-		len++;
-		s++;
+		i++;
 	}
-	return (len);
+	return (i);
 }
+
