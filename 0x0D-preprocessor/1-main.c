@@ -1,4 +1,3 @@
-julien@ubuntu:~/0x0c. macro, structures$ cat 1-main.c
 #include "1-pi.h"
 #include "1-pi.h"
 #include <stdio.h>
