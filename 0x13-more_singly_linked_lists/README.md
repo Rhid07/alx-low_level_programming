@@ -1,24 +1,24 @@
-###0x13. C - More singly linked lists
-##C Algorithm Data structure
+# **0x13. C - More singly linked lists**
+## C Algorithm Data structure
 
 
-##Resources
-*Read or watch:
+# *Resources*
+* Read or watch:
 
 Google
 Youtube
 
-#Learning Objectives
+# Learning Objectives
 
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
-#General
+# General
 
 How to use linked lists
 
 Start to look for the right source of information without too much help
 
-#Copyright - Plagiarism
+# Copyright - Plagiarism
 
 You are tasked to come up with solutions for the tasks below yourself to meet with the above learning objectives.
 
@@ -28,7 +28,7 @@ You are not allowed to publish any content of this project.
 
 Any form of plagiarism is strictly forbidden and will result in removal from the program.
 
-#Requirements
+# Requirements
 
 General
 
