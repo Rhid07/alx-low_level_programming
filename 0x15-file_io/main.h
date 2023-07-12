@@ -1,7 +1,6 @@
 #ifndef RHID07_H
 #define RHID07_H
 
-
  
 #include <stdlib.h>
 #include <fcntl.h>
