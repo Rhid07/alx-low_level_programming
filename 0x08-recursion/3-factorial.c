@@ -4,16 +4,13 @@
  *@n: pointer block of memory to fill
  *Return: factorial
  */
-
 int factorial(int n)
 {
-	if (n == 0) /*Base condition*/
-
+	if (n == 0)
 		return (1);
-
-	else if (n < 0) /*Base condition*/
+	else if (n < 0)
 		return (-1);
 	else
-		return (n * factorial(n - 1)); /*Recursive call*/
-
+		return (n * factorial(n - 1));
 }
+

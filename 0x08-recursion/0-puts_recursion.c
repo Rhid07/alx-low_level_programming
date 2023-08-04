@@ -6,7 +6,6 @@
  * @s: A pointer to a string.
  * Return: A string.
  */
-
 void _puts_recursion(char *s)
 {
 	if (*s != '\0')
