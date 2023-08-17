@@ -27,7 +27,7 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 
 * Any form of plagiarism is strictly forbidden and will result in removal from the program.
 
-#Requirements#
+#Requirements
 
 * General
 
