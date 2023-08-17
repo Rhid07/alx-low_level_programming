@@ -1,8 +1,8 @@
 ### 0x10. C - Variadic functions
 
-# Resources
+## Resources
 
-~~Read or watch:~~
+# Read or watch:
 
 stdarg.h
 Variadic Functions
