@@ -1,7 +1,8 @@
-#0x10. C - Variadic functions#
+### 0x10. C - Variadic functions
 
-#Resources#
-* Read or watch:
+# Resources
+
+~~Read or watch:~~
 
 stdarg.h
 Variadic Functions
@@ -10,15 +11,15 @@ man or help:
 
 stdarg
 
-#Learning Objectives#
+# Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
-#General#
+## General
 * What are variadic functions
 * How to use va_start, va_arg and va_end macros
 * Why and how to use the const type qualifier
 
-#Copyright - Plagiarism#
+__Copyright - Plagiarism__
 * You are tasked to come up with solutions for the tasks below yourself to meet with the above learning objectives.
 
 * You will not be able to meet the objectives of this or any following project by copying and pasting someone else’s work.
@@ -27,7 +28,7 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 
 * Any form of plagiarism is strictly forbidden and will result in removal from the program.
 
-#Requirements
+***Requirements***
 
 * General
 
